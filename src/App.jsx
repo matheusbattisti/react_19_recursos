@@ -1,12 +1,12 @@
 import "./App.css";
 import BotaoDeTema from "./components/BotaoDeTema";
-import CommentSystem from "./components/CommentSystem";
 import EstadoDoFormulario from "./components/EstadoDoFormulario";
 import FormStatus from "./components/FormStatus";
+import MensagemApp from "./components/MensagemApp";
 import UserForm from "./components/MyForm";
 import ParentComponent from "./components/ParentComponent";
 import PostItems from "./components/PostItems";
-import { ThemeContext, ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
@@ -34,9 +34,9 @@ function App() {
       {/* 6 - atualização baseada em reposta do form com useFormStatus */}
       <h1>6 - atualização baseada em reposta do form com useFormStatus</h1>
       <EstadoDoFormulario />
-      {/* 7 - melhorando experiencia do usuário com useOptimistic */}
+      {/* 7 - melhorando experiencia do usuário com useOptimistic, atualizando de maneira otimista */}
       <h1>7 - melhorando experiencia do usuário com useOptimistic</h1>
-      <CommentSystem />
+      <MensagemApp />
     </>
   );
 }

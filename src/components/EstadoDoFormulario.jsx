@@ -24,7 +24,7 @@ const EstadoDoFormulario = () => {
       <label>Nome</label>
       <input type="text" name="nomeUsuario" />
       <button type="submit">Enviar</button>
-      {mensagem && <h1>{mensagem.text}</h1>}
+      {mensagem && <h3>{mensagem.text}</h3>}
     </form>
   );
 };
